@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {margin:0;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  width:100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #0843f3;
+}
+main{
+  padding-top: 30px;
+}
+
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section{
+  padding-top: 50px;
+}
+.question{
+  color: #0843f3;
+  padding-left: 2em;
+}
+.contact{
+  margin-top: 10px;
+  background-color: #7696f6;
+  padding: 30px;
+
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  margin-bottom: 100px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #0843f3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0843f3;
+}
+
+
+.s_contact{
+  display: flex;
+}
+
+.title{
+  padding-right: 10px;
+  font-size: 12px;
+}  
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+  
+  </style>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">service</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </nav>
+  </header>
+
+<main>
+  <section id="home">
+
+      <h1> i'm mouhamed amine mbarek,  web developer with long time experience in this field​</h1>
+    </section>
+    
+    <section id="about">
+      <h1>My name is Mouhamed amine mbarek, and I am passionate about my work as a web developer. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work.
+        For example, I taught myself how to use Photoshop to improve the quality of our photos and graphics. I soon became the go-to person for any design needs.</h1>
+  
+    </section>
+    
+  <section id="service" >
+    <div class="container">
+      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+          <h1 class="question">What I do?</h1>
+          <h2>Awesome Quality Services</h2>
+      </div>
+
+
+      <div class="row">
+        <div class="column" >
+          <div class="row">
+            <div class="column">
+                <img src="web.png" width="200" height="200"/>
+            </div>
+            <div class="column">
+                <h3>Web Design</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="column" >
+          <div class="row">
+            <div class="column">
+                <img src="graphic-design.png" width="200" height="200"/>
+            </div>
+            <div class="column">
+                <h3>Web Development</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="column" >
+          <div class="row">
+            <div class="column">
+                <img src="developer.png" width="200" height="200"/>
+            </div>
+            <div class="column">
+                <h3>Apps Design</h3>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="column" >
+          <div class="row">
+            <div class="column">
+                <img src="computer.png" width="200" height="200"/>
+            </div>
+            <div class="column">
+                <h3>Apps Development</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+     
+
+
+     
+  </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+   </section>
+
+</main>
+<footer>
+  <div class="s_contact">
+    <h1 class="title">Email:    </h1>
+    <h1 class="title">mbarekmouhamedamine@gmail.com</h1>
+   </div>
+   <div class="s_contact">
+     <h1 class="title">Phone Number:    </h1>
+     <h1 class="title">xx xxx xxx</h1>
+    </div>
+    <div class="s_contact">
+     <h1 class="title">Location:    </h1>
+     <h1 class="title">Sousse, Tunisia</h1>
+    </div>
+</footer>
+
+</body>
+</html>
